@@ -7,9 +7,10 @@
   "scripts": {
     "build": "webpack --define process.env.NODE_ENV=\"'production'\"",
     "build:dist": "webpack -p --output-path=\"./dist\"",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["typescript", "react component", "react library"],
   "author": "everdimension@gmail.com",
   "license": "ISC",
   "devDependencies": {
