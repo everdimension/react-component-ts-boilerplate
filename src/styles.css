@@ -14,3 +14,11 @@
   background-color: #49a9ee;
   border-color: #3f93cf;
 }
+
+.button-image {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  font-size: 34px;
+}

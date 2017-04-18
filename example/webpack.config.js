@@ -1,16 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: ['./src/index'],
-  externals: {
-    'react': 'react',
-  },
+  entry: ['./index'],
   output: {
     filename: 'index.js',
-    path: path.resolve(__dirname, 'lib'),
-    // will be available as "window.TSButton" in a non-module environment
-    library: 'TSButton',
-    libraryTarget: 'umd',
+    path: path.resolve(__dirname, 'build'),
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],

@@ -1,16 +1,16 @@
 {
     "compilerOptions": {
-        "rootDir": "./src/",
-        "outDir": "./lib/",
         "sourceMap": true,
         "noImplicitAny": true,
         "module": "commonjs",
         "target": "es5",
         "jsx": "react",
-        "allowSyntheticDefaultImports": true,
-        "declaration": true
+        "allowSyntheticDefaultImports": true
     },
     "include": [
-        "src/**/*"
+        "./"
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }
