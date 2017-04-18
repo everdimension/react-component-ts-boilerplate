@@ -2,6 +2,10 @@ import * as React from 'react';
 const icon = require<any>('./react-icon.svg');
 require<any>('./styles.css');
 
+export interface ButtonState {
+  count: number;
+}
+
 export interface UpdaterFunc {
   (state: ButtonState, props: ButtonProps): ButtonState;
 }
@@ -10,10 +14,6 @@ export interface ButtonProps {
   text: string;
   count: number;
   countUpdater?: UpdaterFunc;
-}
-
-export interface ButtonState {
-  count: number;
 }
 
 export default class Button extends React.Component<ButtonProps, ButtonState> {
